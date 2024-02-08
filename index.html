@@ -55,13 +55,13 @@
       </div>
     </section>
 
-<div class="tabs">
-  <a href="#tools" class="tablink py-2 px-4 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'tools')">Tools</a>
-  <a href="#databases" class="tablink py-2 px-4 bg-gray-800 text-white" onclick="openTab(event, 'databases')">Databases</a>
-  <a href="#languages" class="tablink py-2 px-4 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'languages')">Code Languages & Frameworks</a>
+<div class="tabs flex">
+  <a href="#tools" class="tablink px-4 py-2 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'tools')">Tools</a>
+  <a href="#databases" class="tablink px-4 py-2 bg-gray-800 text-white" onclick="openTab(event, 'databases')">Databases</a>
+  <a href="#languages" class="tablink px-4 py-2 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'languages')">Code Languages & Frameworks</a>
 </div>
 
-<div id="tools" class="tabcontent">
+<div id="tools" class="tabcontent hidden bg-gray-800 p-6 rounded">
   <section class="mt-8 bg-gray-800 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Tools</h2>
     <div class="grid grid-cols-3 gap-4">
@@ -95,7 +95,7 @@
   </section>
 </div>
 
-<div id="databases" class="tabcontent">
+<div id="databases" class="tabcontent hidden bg-gray-800 p-6 rounded">
   <!-- Databases Section -->
   <section class="mt-8 bg-gray-800 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Databases</h2>
@@ -119,7 +119,7 @@
   </section>
 </div>
 
-<div id="languages" class="tabcontent">
+<div id="languages" class="tabcontent hidden bg-gray-800 p-6 rounded">
   <section class="mt-8 bg-gray-800 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Code Languages & Frameworks</h2>
     <div class="grid grid-cols-3 gap-4">
@@ -222,6 +222,7 @@
     evt.currentTarget.classList.add("bg-gray-800", "text-white");
   }
 
+  document.getElementById("tools").classList.remove("hidden");
   document.querySelector(".tablink[href='#tools']").classList.remove("bg-gray-700", "text-gray-300");
   document.querySelector(".tablink[href='#tools']").classList.add("bg-gray-800", "text-white");
 </script>
