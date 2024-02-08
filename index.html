@@ -55,10 +55,10 @@
       </div>
     </section>
 
-   <div class="tabs">
-  <button class="tablinks" onclick="openTab(event, 'tools')">Tools</button>
-  <button class="tablinks" onclick="openTab(event, 'databases')">Databases</button>
-  <button class="tablinks" onclick="openTab(event, 'languages')">Code Languages & Frameworks</button>
+<div class="tabs">
+  <a href="#tools" class="tablink py-2 px-4 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'tools')">Tools</a>
+  <a href="#databases" class="tablink py-2 px-4 bg-gray-800 text-white" onclick="openTab(event, 'databases')">Databases</a>
+  <a href="#languages" class="tablink py-2 px-4 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'languages')">Code Languages & Frameworks</a>
 </div>
 
 <div id="tools" class="tabcontent">
@@ -210,15 +210,21 @@
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      tabcontent[i].classList.add("hidden");
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].classList.remove("bg-gray-800", "text-white");
+      tablinks[i].classList.add("bg-gray-700", "text-gray-300");
     }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    document.getElementById(tabName).classList.remove("hidden");
+    evt.currentTarget.classList.remove("bg-gray-700", "text-gray-300");
+    evt.currentTarget.classList.add("bg-gray-800", "text-white");
   }
+
+  document.getElementById("tools").classList.remove("hidden");
+  document.querySelector(".tablink[href='#tools']").classList.remove("bg-gray-700", "text-gray-300");
+  document.querySelector(".tablink[href='#tools']").classList.add("bg-gray-800", "text-white");
 </script>
 
     <section class="mt-8 bg-gray-800 p-6 rounded">
