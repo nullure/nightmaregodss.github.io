@@ -6,25 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Demon - Portfolio">
   <meta property="og:description" content="Hello i am Demon ">
-  <meta property="og:image"
-    content="https://cdn.discordapp.com/avatars/838359128295342100/2b6a94dd2cc9f2ed899e309925b76bbc?size=1024">
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1108054221456146534/1213496692847153223/image.png?ex=65f5afdd&is=65e33add&hm=e15cb5f9bf12b70169d6754d83db0049dd5f05792a630fd5011a327f8ee13d97&=&format=webp&quality=lossless&width=440&height=437">
   <meta name="theme-color" content="#36d1dc" />
   <meta property="og:url" content="https://nightmaregods.com">
   <meta property="og:type" content="website">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/a54c4437e5.js" crossorigin="anonymous"></script>
   <title>Demon - Portfolio</title>
   <style>
-    .icon {
-      height: 24px;
-      width: 24px;
-      fill: #ffffff;
-    }
+  body {
+    background-image: url('https://media.discordapp.net/attachments/1135147336771850250/1213502482848940093/CITYSCAPE1142023.png?ex=65f5b541&is=65e34041&hm=8fc3ac7e5af1126d1461af8b2a158d2e7e8f8c497a4101cf9a742719138b2deb&=&format=webp&quality=lossless&width=687&height=386');
+    background-size: cover;
+    background-position: center;
+}
+.icon {
+    height: 24px;
+    width: 24px;
+    fill: #ffffff;
+  }
   </style>
+  <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1108054221456146534/1213496692847153223/image.png?ex=65f5afdd&is=65e33add&hm=e15cb5f9bf12b70169d6754d83db0049dd5f05792a630fd5011a327f8ee13d97&=&format=webp&quality=lossless&width=440&height=437">
 </head>
 
-<body class="bg-gray-900 text-white">
-  <header class="bg-gray-800">
+<body class="text-white">
+ 
+  <header class="bg-zinc-950">
     <nav class="container mx-auto px-4 py-2 flex justify-end">
       <a href="https://github.com/Nightmaregodss" target="_blank" rel="noopener noreferrer"
         class="flex items-center mr-4 text-white hover:text-gray-400">
@@ -38,7 +44,8 @@
   </header>
 
   <main class="container mx-auto px-4 py-8">
-    <section class="bg-gray-800 p-6 rounded">
+
+    <section class="bg-zinc-950 p-6 rounded">
       <div class="flex items-center">
         <div class="w-1/2">
           <h2 class="text-2xl font-bold text-slate-200">Hello there, my name is <span
@@ -56,13 +63,13 @@
     </section>
 
 <div class="tabs flex">
-  <a href="#tools" class="tablink px-4 py-2 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'tools')">Tools</a>
-  <a href="#databases" class="tablink px-4 py-2 bg-gray-800 text-white" onclick="openTab(event, 'databases')">Databases</a>
-  <a href="#languages" class="tablink px-4 py-2 bg-gray-800 text-white rounded-t-lg" onclick="openTab(event, 'languages')">Code Languages & Frameworks</a>
+  <a href="#tools" class="tablink px-4 py-2 bg-zinc-950 text-white rounded-t-lg" onclick="openTab(event, 'tools')">Tools</a>
+  <a href="#databases" class="tablink px-4 py-2 bg-zinc-950 text-white" onclick="openTab(event, 'databases')">Databases</a>
+  <a href="#languages" class="tablink px-4 py-2 bg-zinc-950 text-white rounded-t-lg" onclick="openTab(event, 'languages')">Code Languages & Frameworks</a>
 </div>
 
-<div id="tools" class="tabcontent hidden bg-gray-800 p-6 rounded">
-  <section class="mt-8 bg-gray-800 p-6 rounded">
+<div id="tools" class="tabcontent hidden bg-zinc-950 p-6 rounded">
+  <section class="mt-8 bg-zinc-950 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Tools</h2>
     <div class="grid grid-cols-3 gap-4">
              <div class="flex items-center p-4 bg-gray-700 rounded">
@@ -95,9 +102,9 @@
   </section>
 </div>
 
-<div id="databases" class="tabcontent hidden bg-gray-800 p-6 rounded">
+<div id="databases" class="tabcontent hidden bg-zinc-950 p-6 rounded">
   <!-- Databases Section -->
-  <section class="mt-8 bg-gray-800 p-6 rounded">
+  <section class="mt-8 bg-zinc-950 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Databases</h2>
     <div class="grid grid-cols-3 gap-4">
               <div class="flex items-center p-4 bg-gray-700 rounded">
@@ -119,8 +126,8 @@
   </section>
 </div>
 
-<div id="languages" class="tabcontent hidden bg-gray-800 p-6 rounded">
-  <section class="mt-8 bg-gray-800 p-6 rounded">
+<div id="languages" class="tabcontent hidden bg-zinc-950 p-6 rounded">
+  <section class="mt-8 bg-zinc-950 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Code Languages & Frameworks</h2>
     <div class="grid grid-cols-3 gap-4">
               <div class="flex items-center p-4 bg-gray-700 rounded">
@@ -214,20 +221,20 @@
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("bg-gray-800", "text-white");
+      tablinks[i].classList.remove("bg-zinc-950", "text-white");
       tablinks[i].classList.add("bg-gray-700", "text-gray-300");
     }
     document.getElementById(tabName).classList.remove("hidden");
     evt.currentTarget.classList.remove("bg-gray-700", "text-gray-300");
-    evt.currentTarget.classList.add("bg-gray-800", "text-white");
+    evt.currentTarget.classList.add("bg-zinc-950", "text-white");
   }
 
   document.getElementById("tools").classList.remove("hidden");
   document.querySelector(".tablink[href='#tools']").classList.remove("bg-gray-700", "text-gray-300");
-  document.querySelector(".tablink[href='#tools']").classList.add("bg-gray-800", "text-white");
+  document.querySelector(".tablink[href='#tools']").classList.add("bg-zinc-950", "text-white");
 </script>
 
-    <section class="mt-8 bg-gray-800 p-6 rounded">
+    <section class="mt-8 bg-zinc-950 p-6 rounded">
       <h2 class="text-2xl font-bold mb-4">Main Projects</h2>
       <div class="grid grid-cols-3 gap-4">
         <p class="mt-4 font-bold">
@@ -240,7 +247,7 @@
       </div>
     </section>
 
-<section class="mt-8 bg-gray-800 p-6 rounded">
+<section class="mt-8 bg-zinc-950 p-6 rounded">
   <h2 class="text-2xl font-bold mb-4">Discord Status</h2>
   <div class="flex items-center justify-center p-4 bg-gray-700">
     <img src="https://discord.c99.nl/widget/theme-2/838359128295342100.png?size=1024" alt="Discord Status" class="">
