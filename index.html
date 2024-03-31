@@ -13,22 +13,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/a54c4437e5.js" crossorigin="anonymous"></script>
   <title>Demon - Portfolio</title>
-  <style>
-  body {
-    background-image: url('https://media.discordapp.net/attachments/1108610891227873310/1199820327597920368/gradient-shape-wallpaper.png?ex=6616fd41&is=66048841&hm=f173c8c0dd9c6db286c4d09bb12b83de3b655aad9361a38501f2a669c402c2ba&=&format=webp&quality=lossless');
-    background-size: cover;
-    background-position: center;
-}
-.icon {
-    height: 24px;
-    width: 24px;
-    fill: #ffffff;
-  }
-  </style>
   <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/1108054221456146534/1213496692847153223/image.png?ex=65f5afdd&is=65e33add&hm=e15cb5f9bf12b70169d6754d83db0049dd5f05792a630fd5011a327f8ee13d97&=&format=webp&quality=lossless&width=440&height=437">
 </head>
 
-<body class="text-white">
+<body class="text-white bg-zinc-950/20">
  
   <header class="bg-zinc-950">
     <nav class="container mx-auto px-4 py-2 flex justify-end">
@@ -45,7 +33,7 @@
 
   <main class="container mx-auto px-4 py-8">
 
-    <section class="bg-zinc-950 p-6 rounded">
+    <section class="bg-zinc-950/70 p-6 rounded">
       <div class="flex items-center">
         <div class="w-1/2">
           <h2 class="text-2xl font-bold text-slate-200">Hello there, my name is <span
@@ -68,32 +56,32 @@
   <a href="#languages" class="tablink px-4 py-2 bg-zinc-950 text-white rounded-t-lg" onclick="openTab(event, 'languages')">Code Languages & Frameworks</a>
 </div>
 
-<div id="tools" class="tabcontent hidden bg-zinc-950 p-6 rounded">
+<div id="tools" class="tabcontent hidden bg-zinc-950/30 p-6 rounded">
   <section class="mt-8 bg-zinc-950 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Tools</h2>
     <div class="grid grid-cols-3 gap-4">
-             <div class="flex items-center p-4 bg-gray-700 rounded">
+             <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
             alt="nginx" width="40" height="40" />
           <span class="ml-2">Nginx</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img
             src="https://banner2.cleanpng.com/20180821/hiq/kisspng-logo-apache-http-server-apache-software-foundation-apache-performance-tuning-sysinfo-io-5b7c0e12385ba7.9035614115348567222309.jpg"
             alt="Apache2" width="40" height="40" />
           <span class="ml-2">Apache2</span>
         </div>
-      <div class="flex items-center p-4 bg-gray-700 rounded">
+      <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
             alt="docker" width="40" height="40" />
           <span class="ml-2">Docker</span>
         </div>
-   <div class="flex items-center p-4 bg-gray-700 rounded">
+   <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
             alt="docker" width="40" height="40" />
           <span class="ml-2">Visual Studio Code</span>
         </div>
-         <div class="flex items-center p-4 bg-gray-700 rounded">
+         <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png"
             alt="docker" width="40" height="40" />
           <span class="ml-2">Sublime Text</span>
@@ -102,22 +90,22 @@
   </section>
 </div>
 
-<div id="databases" class="tabcontent hidden bg-zinc-950 p-6 rounded">
+<div id="databases" class="tabcontent hidden bg-zinc-950/80 p-6 rounded">
   <!-- Databases Section -->
   <section class="mt-8 bg-zinc-950 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Databases</h2>
     <div class="grid grid-cols-3 gap-4">
-              <div class="flex items-center p-4 bg-gray-700 rounded">
+              <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
             alt="mysql" width="40" height="40" />
           <span class="ml-2">Mysql</span>
         </div>
-       <div class="flex items-center p-4 bg-gray-700 rounded">
+       <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_400x400.png" alt="mangodb"
             width="40" height="40" />
           <span class="ml-2">Mongodb</span>
         </div>
-       <div class="flex items-center p-4 bg-gray-700 rounded">
+       <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="sql"
             width="40" height="40" />
           <span class="ml-2">Sqlite</span>
@@ -130,79 +118,79 @@
   <section class="mt-8 bg-zinc-950 p-6 rounded">
     <h2 class="text-2xl font-bold mb-4">Code Languages & Frameworks</h2>
     <div class="grid grid-cols-3 gap-4">
-              <div class="flex items-center p-4 bg-gray-700 rounded">
+              <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
             alt="html5" width="40" height="40" />
           <span class="ml-2">HTML</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
             alt="css3" width="40" height="40" />
           <span class="ml-2">CSS</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img
             src="https://media.discordapp.net/attachments/838372326071861331/1107944185069326366/tw.png?width=418&height=418"
             alt="tailwind" width="40" height="40" />
           <span class="ml-2">Tailwind CSS</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
             alt="bootstrap" width="40" height="40" />
           <span class="ml-2">Bootstrap</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
             alt="javascript" width="40" height="40" />
           <span class="ml-2">JavaScript</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
             alt="nodejs" width="40" height="50" />
           <span class="ml-2">Nodejs</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
             alt="express" width="40" height="40" />
           <span class="ml-2">Express</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
             alt="react" width="40" height="40" />
           <span class="ml-2">React</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
             alt="typescript" width="40" height="40" />
           <span class="ml-2">Typescript</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bbg-zinc-950/20 rounded">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="bash"
             width="40" height="40" />
           <span class="ml-2">PHP</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40" />
           <span class="ml-2">Bash</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://cdn.icon-icons.com/icons2/2148/PNG/512/ejs_icon_132422.png" alt="ejs" width="40"
             height="40" />
           <span class="ml-2">Ejs</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://w7.pngwing.com/pngs/492/902/png-transparent-vuejs-original-wordmark-logo-icon-thumbnail.png"
             alt="vuejs" width="40" height="40" />
           <span class="ml-2">vue.js</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://bb.agency/wp-content/uploads/2022/07/nuxtjs_img2.webp"
             alt="Nuxtjs" width="40" height="40" />
           <span class="ml-2">Nuxt.js</span>
         </div>
-        <div class="flex items-center p-4 bg-gray-700 rounded">
+        <div class="flex items-center p-4 bg-zinc-950/20 rounded">
           <img src="https://miro.medium.com/v2/resize:fit:1358/0*Wkrz5TuOxQs9tXri.png"
             alt="Nextjs" width="40" height="40" />
           <span class="ml-2">Next.js</span>
@@ -249,7 +237,7 @@
 
 <section class="mt-8 bg-zinc-950 p-6 rounded">
   <h2 class="text-2xl font-bold mb-4">Discord Status</h2>
-  <div class="flex items-center justify-center p-4 bg-gray-700">
+  <div class="flex items-center justify-center p-4 bg-zinc-950/20">
     <img src="https://discord.c99.nl/widget/theme-2/838359128295342100.png?size=1024" alt="Discord Status" class="">
   </div>
 </section>
