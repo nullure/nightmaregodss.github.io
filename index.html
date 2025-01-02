@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Demon's Portfolio</title>
-        <style>
-        .section2 {
-            background-color: #000000;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%2337c9e2' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100%; 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#7C3AED',
+                        'accent-hover': '#6D28D9'
+                    }
+                }
+            }
         }
+    </script>
+    <style>
         ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -37,313 +41,251 @@
     background-size: cover;
     z-index: 0;
 }
-
     </style>
 </head>
-
-<body class="bg-zinc-950 w-screen h-full overflow-x-hidden">
-    <main class="w-screen h-full overflow-x-hidden" id="holder">
-        <section class="relative w-screen h-screen flex flex-col items-center justify-center section section2" id="section2">
-            <h1
-                class="text-3xl z-20l mt-2 xl:mt-8 text-center md:text-5xl xl:text-7xl bg-gradient-to-br from-white to-transparent bg-clip-text text-transparent">
-                Welcome to Demon's
-            </h1>
-            <h1
-            class="text-3xl z-20l mt-2 xl:mt-8 text-center md:text-5xl xl:text-7xl bg-gradient-to-br from-white to-transparent bg-clip-text text-transparent">
-            Portfolio
-        </h1>
-                    <p
-                class="text-gray-300 z-20 max-w-sm px-4 text-center md:px-0 md:max-w-md xl:max-w-xl mt-4 text-xs md:text-lg">
-                My tiny horny portfolio</p>
-        </section>
-        <div class="w-full absolute h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
-<section class="relative px-4 md:px-8 xl:px-16 max-w-screen-xl mx-auto w-full min-h-screen flex items-center">
-    <div class="bg-gradient-to-b from-zinc-900 to-trin-900/50 rounded-3xl p-4 md:p-8 border border-zinc-800/80 w-full max-w-xl mx-auto">
-        <h1 class="text-gray-200 font-rajdhani font-bold text-3xl md:text-5xl text-center mb-4">
-           About me
-        </h1>
-        <div class="my-8 h-0.5 bg-gradient-to-r from-transparent via-red-600 to-transparent"></div>
-        <div class="text-gray-300 text-sm md:text-base">
-            <p>In 2021, I started my adventure into the field of software development at the youthful age of 13. I began by utilizing discord.js to create Discord bots, which helped me quickly become proficient in JavaScript. Even though I changed my priorities at the beginning of 2022, I moved into the hosting industry with ease and became an another normal developer for many hosting platforms.
-
-            I started Fex, a growing developer community then ditched it in 2023.
-
-            As a result of my varied skills and unwavering commitment to innovation, I am the head development for Holaclient-E, a platform that is an alternative to Pterodactyl. My goal with Holaclient-E is to revolutionize the hosting industry by providing improved features, smooth user interface and a client integrated in panel.
-            I'm dedicated to bringing about positive change and making a long-lasting impression on the development landscape as I keep pushing the envelope of what's possible in the technology business. My experience to date bears witness to my commitment, flexibility, and unwavering desire to make significant contributions to the field of technology.</p>
-        </div>
+<body class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black text-white">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <div class="w-80 border-r border-zinc-800/50 bg-black/50 backdrop-blur-xl p-8 space-y-8">
+            <!-- Profile -->
+            <div class="text-center space-y-4">
+                <div class="relative w-32 h-32 mx-auto">
+                    <img src="https://avatars.githubusercontent.com/u/81895400?s=400&u=14dfc9816c135eb106be9eda2c5d02c724a49885&v=4" alt="Profile" class="w-full h-full rounded-full border-2 border-zinc-800/50">
+                    <div class="absolute bottom-0 right-0 w-8 h-8 bg-zinc-900 rounded-full border-2 border-zinc-800 flex items-center justify-center">
+                        <span class="text-yellow-400">👋</span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">Demon</h1>
+                    <h2 class="text-xl text-zinc-400">Full Stack Developer & Designer</h2>
+                </div>
+                <p class="text-zinc-400">"Don't wait for the opportunies to jump on you, jump on the opportunies instead." - Demon 2024</p>
+            </div>
+            <!-- Sponsoring -->
+<div class="space-y-4">
+    <h3 class="text-lg font-semibold">Sponsoring</h3>
+    <div class="space-y-2">
+        <a href="https://github.com/prplwtf" class="flex items-center gap-2 bg-zinc-900/30 backdrop-blur-sm p-3 rounded-xl border border-zinc-800/50 hover:bg-zinc-800/30 transition-all">
+            <img src="https://github.com/prplwtf.png" alt="Hannoob" class="w-8 h-8 rounded-full">
+            <span class="text-zinc-400">Emma</span>
+        </a>
     </div>
-</section>
-<div class="my-8 h-0.5 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
-<section class="relative px-12 md:px-32 w-screen min-h-screen h-full items-center">
-
-     <div class="mt-8 md:mt-16 bg-gradient-to-b from-zinc-900 to-trin-900/50 rounded-3xl p-4 border border-zinc-800/80">
-        <h1 class="pt-4 text-gray-200 font-rajdhani font-bold text-center text-3xl md:text-5xl">
-            My skills
-        </h1>
-        <div class="my-6 h-0.5 bg-gradient-to-r from-transparent via-red-600 to-transparent mb-4"></div>
-        <div class="px-8 w-full h-max justify-left text-gray-300 text-md md:text-lg space-y-4 md:space-y-8">
-<div class="flex flex-col">
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>File extension</th>
-                <th>Year Learned</th>
-                <th>Year Founded</th>
-                <th>Founder</th>
-                <th>Type</th>
-                <th>Logo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nginx</td>
-                <td>.conf</td>
-                <td>2021</td>
-                <td>2004</td>
-                <td> Igor Sysoev</td>
-                <td>Web Server</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Apache2</td>
-                <td>.conf</td>
-                <td>2022</td>
-                <td>1995</td>
-                <td>Apache Software Foundation</td>
-                <td>Web Server</td>
-                <td><img src="https://banner2.cleanpng.com/20180821/hiq/kisspng-logo-apache-http-server-apache-software-foundation-apache-performance-tuning-sysinfo-io-5b7c0e12385ba7.9035614115348567222309.jpg" alt="Apache2" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Docker</td>
-                <td>N/A</td>
-                <td>2022</td>
-                <td>2013</td>
-                <td>Dotcloud</td>
-                <td>Containerization Platform</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Visual Studio Code</td>
-                <td>N/A</td>
-                <td>2021</td>
-                <td>2015</td>
-                <td>Microsoft</td>
-                <td>Integrated Development Environment (IDE)</td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Sublime Text</td>
-                <td>N/A</td>
-                <td>2021</td>
-                <td>2008</td>
-                <td>Jon Skinner</td>
-                <td>Text Editor</td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="Sublime Text" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Mysql</td>
-                <td>.sql</td>
-                <td>2021</td>
-                <td>1995</td>
-                <td>MySQL AB</td>
-                <td>Relational Database Management System (RDBMS)</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Mongodb</td>
-                <td>N/A</td>
-                <td>2021</td>
-                <td>2009</td>
-                <td>Humongous Entertainment</td>
-                <td>Document-oriented Database Program</td>
-                <td><img src="https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_400x400.png" alt="mongodb" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Sqlite</td>
-                <td>.sqlite</td>
-                <td>2021</td>
-                <td>2000</td>
-                <td>D. Richard Hipp</td>
-                <td>Relational Database Management System (RDBMS)</td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="sqlite" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>.html</td>
-                <td>2020</td>
-                <td>1993</td>
-                <td>Tim Berners-Lee</td>
-                <td>Markup Language</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>.css</td>
-                <td>2020</td>
-                <td>1996</td>
-                <td>Håkon Wium Lie, Bert Bos</td>
-                <td>Style Sheet Language</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Tailwind CSS</td>
-                <td>.css</td>
-                <td>2022</td>
-                <td>2017</td>
-                <td>Adam Wathan, Jonathan Reinink, David Hemphill, Steve Schoger</td>
-                <td>CSS Framework</td>
-                <td><img src="https://media.discordapp.net/attachments/838372326071861331/1107944185069326366/tw.png?width=418&height=418" alt="Tailwind CSS" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Bootstrap</td>
-                <td>.css</td>
-                <td>2021</td>
-                <td>2011</td>
-                <td>Mark Otto, Jacob Thornton</td>
-                <td>CSS Framework</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>.js</td>
-                <td>2021</td>
-                <td>1995</td>
-                <td>Brendan Eich</td>
-                <td>Client-side Scripting Language</td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png" alt="JavaScript" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Node.js</td>
-                <td>.js</td>
-                <td>2021</td>
-                <td>2009</td>
-                <td>Ryan Dahl</td>
-                <td>JavaScript Runtime Environment</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" width="40" height="50"></td>
-            </tr>
-            <tr>
-                <td>Express</td>
-                <td>N/A</td>
-                <td>2021</td>
-                <td>2010</td>
-                <td>TJ Holowaychuk</td>
-                <td>Web Application Framework for Node.js</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="Express" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>React</td>
-                <td>.tsx/.jsx</td>
-                <td>2022</td>
-                <td>2013</td>
-                <td>Jordan Walke</td>
-                <td>JavaScript Library for Building User Interfaces</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Typescript</td>
-                <td>.ts</td>
-                <td>2022</td>
-                <td>2012</td>
-                <td>Anders Hejlsberg</td>
-                <td>Programming Language</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Typescript" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>PHP</td>
-                <td>.php</td>
-                <td>2021</td>
-                <td>1995</td>
-                <td>Rasmus Lerdorf</td>
-                <td>Server-side Scripting Language</td>
-                <td><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Bash</td>
-                <td>.sh/.bash/terminal</td>
-                <td>2021</td>
-                <td>1989</td>
-                <td>Brian Fox</td>
-                <td>Unix Shell</td>
-                <td><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Ejs</td>
-                <td>.ejs</td>
-                <td>2022</td>
-                <td>2007</td>
-                <td>TJ Holowaychuk</td>
-                <td>Embedded JavaScript Templating</td>
-                <td><img src="https://cdn.icon-icons.com/icons2/2148/PNG/512/ejs_icon_132422.png" alt="Ejs" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Vue.js</td>
-                <td>.vue</td>
-                <td>2022</td>
-                <td>2014</td>
-                <td>Evan You</td>
-                <td>JavaScript Framework</td>
-                <td><img src="https://w7.pngwing.com/pngs/492/902/png-transparent-vuejs-original-wordmark-logo-icon-thumbnail.png" alt="Vue.js" width="40" height="40"></td>
-            </tr>
-            <tr>
-                <td>Next.js</td>
-                <td>.tsx/.jsx</td>
-                <td>2022</td>
-                <td>2016</td>
-                <td>Guillermo Rauch</td>
-                <td>React Framework</td>
-                <td><img src="https://miro.medium.com/v2/resize:fit:1358/0*Wkrz5TuOxQs9tXri.png" alt="Next.js" width="40" height="40"></td>
-            </tr>
-        </tbody>
-    </table>
-    
 </div>
+            <div class="space-y-2 border-l-2 border-zinc-700 pl-4">
+                <h2 class="text-lg font-semibold text-zinc-200 mb-2">Profile Information</h2>
+                <div class="flex items-center gap-2">
+                    <span>📍</span>
+                    <span class="text-zinc-400 font-medium">Location:</span>
+                    <span class="text-zinc-200">India</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>🗣️</span>
+                    <span class="text-zinc-400 font-medium">Language:</span>
+                    <span class="text-zinc-200">English</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>💼</span>
+                    <span class="text-zinc-400 font-medium">Project:</span>
+                    <span class="text-zinc-200">Spectrum Labs</span>
+                </div>
+            </div>
+                      <!-- Socials -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold">Socials</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="skytomyt@gmail.com" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="far fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://twitter.com/spectrumlabs" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="discord.com/holaclient" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://github.com/nightmaregodss" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Main Content -->
+        <main class="flex-1 p-12">
 
-
+                       <!-- Skills Grid -->
+                       <section class="mb-24">
+                           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                               <!-- Programming Languages -->
+                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                                   <div class="flex items-center gap-4 mb-4">
+                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                           <i class="fas fa-code text-accent text-2xl"></i>
+                                       </div>
+                                       <div>
+                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Languages</div>
+                                           <div class="text-zinc-400 text-lg">Programming</div>
+                                       </div>
+                                   </div>
+                                   <div class="flex flex-wrap gap-2">
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-js text-[#F7DF1E]"></i>JavaScript</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://avatars.githubusercontent.com/u/5430905?s=200&v=4" class="w-4 h-4">Rust</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" class="w-4 h-4">C#</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" class="w-4 h-4">C++</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-php text-[#777BB4]"></i>PHP</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-html5 text-[#E34F26]"></i>HTML</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-css3-alt text-[#1572B6]"></i>CSS</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" class="w-4 h-4">TypeScript</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-terminal text-zinc-300"></i>Bash</span>
+                                   </div>
+                               </div>
+           
+                               <!-- Frameworks -->
+                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                                   <div class="flex items-center gap-4 mb-4">
+                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                           <i class="fas fa-layer-group text-accent text-2xl"></i>
+                                       </div>
+                                       <div>
+                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Frameworks</div>
+                                           <div class="text-zinc-400 text-lg">& Runtimes</div>
+                                       </div>
+                                   </div>
+                                   <div class="flex flex-wrap gap-2">
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-node-js text-[#339933]"></i>Node.js</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" class="w-4 h-4 invert">Next.js</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-vuejs text-[#4FC08D]"></i>Vue.js</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-react text-[#61DAFB]"></i>React</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://blueprint.zip/.assets/brand/logoTransparent.png" class="w-4 h-4 invert">Blueprint</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" class="w-4 h-4 invert">Express</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-4 h-4">Tailwind CSS</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-bootstrap text-[#7952B3]"></i>Bootstrap</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://cdn.icon-icons.com/icons2/2148/PNG/512/ejs_icon_132422.png" class="w-4 h-4">EJS</span>
+                                   </div>
+                               </div>
+           
+                               <!-- Tools -->
+                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                                   <div class="flex items-center gap-4 mb-4">
+                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                           <i class="fas fa-tools text-accent text-2xl"></i>
+                                       </div>
+                                       <div>
+                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Tools</div>
+                                           <div class="text-zinc-400 text-lg">& Software</div>
+                                       </div>
+                                   </div>
+                                   <div class="flex flex-wrap gap-2">
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" class="w-4 h-4">VS Code</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" class="w-4 h-4">Docker</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" class="w-4 h-4">Nginx</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg" class="w-4 h-4">Apache2</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" class="w-4 h-4">MySQL</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" class="w-4 h-4">MongoDB</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" class="w-4 h-4">SQLite</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-edit text-blue-400"></i>Sublime Text</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-mouse-pointer text-purple-400"></i>Cursor</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-code text-blue-400"></i>Codeium</span>
+                                   </div>
+                               </div>
+                           </div>
+           
+                           <!-- Others -->
+                           <div class="mt-8">
+                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                                   <div class="flex items-center gap-4 mb-4">
+                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                           <i class="fas fa-plus text-accent text-2xl"></i>
+                                       </div>
+                                       <div>
+                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Others</div>
+                                           <div class="text-zinc-400 text-lg">Additional Skills</div>
+                                       </div>
+                                   </div>
+                                   <div class="flex flex-wrap gap-2">
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-file-code"></i>Markdown</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-camera"></i>Photoshop</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-file-excel"></i>Excel</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-file-powerpoint"></i>PPT</span>
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-database"></i>Access</span>
+                                   </div>
+                               </div>
+                           </div>
+           
+                           <!-- Currently Learning -->
+                           <div class="mt-8">
+                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                                   <div class="flex items-center gap-4 mb-4">
+                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                           <i class="fas fa-graduation-cap text-accent text-2xl"></i>
+                                       </div>
+                                       <div>
+                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Learning</div>
+                                           <div class="text-zinc-400 text-lg">Currently exploring</div>
+                                       </div>
+                                   </div>
+                                   <div class="flex flex-wrap gap-2">
+                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
+                                           <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" class="w-4 h-4">Laravel
+                                       </span>
+                                   </div>
+                               </div>
+                           </div>
+                       </section>
+<!-- GitHub Contributions -->
+<section class="mb-24">
+    <div class="group p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+        <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i class="fab fa-github text-accent text-2xl"></i>
+            </div>
+            <div>
+                <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">GitHub Activity</div>
+                <div class="text-zinc-400 text-lg">Contributions in 2025</div>
+            </div>
+        </div>
+        <div class="overflow-hidden rounded-xl">
+            <img src="
+            https://ghchart.rshah.org/nightmaregodss"
+                 alt="GitHub Contributions Graph 2025"
+                 class="w-full">
         </div>
     </div>
 </section>
-                  <footer class="w-screen h-full pt-10 p-8 flex justify-between items-center">
-            <p class="text-center text-gray-300">
-              <span class="self-center text-2xl whitespace-nowrap font-bold font-nunito text-white">&copy; 2024 Demon</span>
-            </p>
-          </footer>
 
-    </main>
+<!-- Projects -->
+            <section>
+                <h2 class="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text mb-12">Latest Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project Card -->
+                    <div class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">HolaClient-E</h3>
+                        <p class="text-zinc-400 mb-4">An alternative to Pterodactyl with improved features, smooth UI and integrated client panel.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                <i class="fas fa-code"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Spectrum Labs</h3>
+                        <p class="text-zinc-400 mb-4">Addons that will make your Pterodactyl Fly.</p>
+                        <div class="flex gap-4">
+                            <a href="https://builtbybit.com/creators/spectrum_dev.551679" class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                <i class="fas fa-code"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
-<style>
-    .section {
-        transition: opacity 0.2s ease-in-out;
-        opacity: 0;
-    }
-</style>
-<script>
-    const a = document.querySelectorAll('.section');
-    const b = document.getElementById('holder');
-
-    const c = new IntersectionObserver(d => {
-        d.forEach(e => {
-            if (e.isIntersecting) {
-                e.target.style.opacity = '1';
-            } else {
-                e.target.style.opacity = '0';
-            }
-        });
-    }, { threshold: 0.5 });
-    a.forEach(f => {
-        c.observe(f);
-    });
-    let g = false;
-    function h() {
-        if (g) return;
-        g = true;
-        b.style.transform =
-            b.style.transform === 'translateX(-100%)' ? 'translateX(0)' : 'translateX(-100%)';
-        b.addEventListener('transitionend', () => {
-            g = false;
-        }, { once: true });
-    }
-</script>
-
 </html>
