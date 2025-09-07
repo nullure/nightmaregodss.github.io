@@ -1,281 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morven - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        accent: '#7C3AED',
-                        'accent-hover': '#6D28D9'
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#7C3AED",
+              "accent-hover": "#6D28D9",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
 
-::-webkit-scrollbar-thumb {
-    background-color: rgba(156, 163, 175);
-    border-radius: 3px;
-}
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(156, 163, 175);
+        border-radius: 3px;
+      }
 
-::-webkit-scrollbar-track {
-    background-color: transparent;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: inherit;
-    background-size: cover;
-    z-index: 0;
-}
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: inherit;
+        background-size: cover;
+        z-index: 0;
+      }
     </style>
-</head>
-<body class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black text-white">
+  </head>
+  <body
+    class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black text-white"
+  >
     <div class="flex min-h-screen">
-        <!-- Sidebar -->
-        <div class="w-80 border-r border-zinc-800/50 bg-black/50 backdrop-blur-xl p-8 space-y-8">
-            <!-- Profile -->
-            <div class="text-center space-y-4">
-                <div class="relative w-32 h-32 mx-auto">
-                    <img src="https://avatars.githubusercontent.com/u/81895400?s=400&u=14dfc9816c135eb106be9eda2c5d02c724a49885&v=4" alt="Profile" class="w-full h-full rounded-full border-2 border-zinc-800/50">
-                    <div class="absolute bottom-0 right-0 w-8 h-8 bg-zinc-900 rounded-full border-2 border-zinc-800 flex items-center justify-center">
-                        <span class="text-yellow-400">💸</span>
-                    </div>t
+      <!-- Sidebar -->
+      <div
+        class="w-80 border-r border-zinc-800/50 bg-black/50 backdrop-blur-xl p-8 space-y-8"
+      >
+        <!-- Profile -->
+        <div class="text-center space-y-4">
+          <div class="relative w-32 h-32 mx-auto">
+            <img
+              src="https://avatars.githubusercontent.com/u/81895400?s=400&u=14dfc9816c135eb106be9eda2c5d02c724a49885&v=4"
+              alt="Profile"
+              class="w-full h-full rounded-full border-2 border-zinc-800/50"
+            />
+            <div
+              class="absolute bottom-0 right-0 w-8 h-8 bg-zinc-900 rounded-full border-2 border-zinc-800 flex items-center justify-center"
+            >
+              <span class="text-yellow-400">💸</span>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold">Morven</h1>
+            <h2 class="text-xl text-zinc-400">
+              Full Stack Developer & Designer
+            </h2>
+          </div>
+          <p class="text-zinc-400">
+            "Don't wait for the opportunies to jump on you, jump on the
+            opportunies instead." - Morven
+          </p>
+        </div>
+        <div class="space-y-2 border-l-2 border-zinc-700 pl-4">
+          <h2 class="text-lg font-semibold text-zinc-200 mb-2">
+            Profile Information
+          </h2>
+          <div class="flex items-center gap-2">
+            <span>📍</span>
+            <span class="text-zinc-400 font-medium">Location:</span>
+            <span class="text-zinc-200">Earth</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span>🗣️</span>
+            <span class="text-zinc-400 font-medium">Language:</span>
+            <span class="text-zinc-200">English</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span>💼</span>
+            <span class="text-zinc-400 font-medium">Workplace:</span>
+            <span class="text-zinc-200">Cavira</span>
+          </div>
+        </div>
+        <!-- Socials -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold">Socials</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <a
+              href="skytomyt@gmail.com"
+              class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
+            >
+              <i class="far fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a
+              href="https://twitter.com/caviraoss"
+              class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
+            >
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a
+              href="https://discord.gg/93M9XSuEj6"
+              class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
+            >
+              <i class="fab fa-discord"></i>
+              <span>Discord</span>
+            </a>
+            <a
+              href="https://github.com/nullure"
+              class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
+            >
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-12">
+        <!-- Skills Grid -->
+        <section class="mb-24">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Programming Languages -->
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-code text-accent text-2xl"></i>
                 </div>
                 <div>
-                    <h1 class="text-2xl font-bold">Morven</h1>
-                    <h2 class="text-xl text-zinc-400">Full Stack Developer & Designer</h2>
+                  <div
+                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text"
+                  >
+                    Languages
+                  </div>
+                  <div class="text-zinc-400 text-lg">Programming & Markup</div>
                 </div>
-                <p class="text-zinc-400">"Don't wait for the opportunies to jump on you, jump on the opportunies instead." - Morven</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-js text-[#F7DF1E]"></i>JavaScript</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://avatars.githubusercontent.com/u/5430905?s=200&v=4"
+                    class="w-4 h-4"
+                  />Rust</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                    class="w-4 h-4"
+                  />C#</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                    class="w-4 h-4"
+                  />C++</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-php text-[#777BB4]"></i>PHP</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-html5 text-[#E34F26]"></i>HTML</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-css3-alt text-[#1572B6]"></i>CSS</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                    class="w-4 h-4"
+                  />TypeScript</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-terminal text-zinc-300"></i>Bash</span
+                >
+              </div>
             </div>
-            <div class="space-y-2 border-l-2 border-zinc-700 pl-4">
-                <h2 class="text-lg font-semibold text-zinc-200 mb-2">Profile Information</h2>
-                <div class="flex items-center gap-2">
-                    <span>📍</span>
-                    <span class="text-zinc-400 font-medium">Location:</span>
-                    <span class="text-zinc-200">Earth</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span>🗣️</span>
-                    <span class="text-zinc-400 font-medium">Language:</span>
-                    <span class="text-zinc-200">English</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span>💼</span>
-                    <span class="text-zinc-400 font-medium">Workplace:</span>
-                    <span class="text-zinc-200">Cavira</span>
-                </div>
-            </div>
-                      <!-- Socials -->
-            <div class="space-y-4">
-                <h3 class="text-lg font-semibold">Socials</h3>
-                <div class="grid grid-cols-2 gap-4">
-                    <a href="skytomyt@gmail.com" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
-                        <i class="far fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://twitter.com/caviraoss" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
-                        <i class="fab fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://discord.gg/93M9XSuEj6" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
-                        <i class="fab fa-discord"></i>
-                        <span>Discord</span>
-                    </a>
-                    <a href="https://github.com/nullure" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
-        </div>
 
-        <!-- Main Content -->
-        <main class="flex-1 p-12">
+            <!-- Frameworks -->
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-layer-group text-accent text-2xl"></i>
+                </div>
+                <div>
+                  <div
+                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text"
+                  >
+                    Frameworks
+                  </div>
+                  <div class="text-zinc-400 text-lg">& Runtimes</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-node-js text-[#339933]"></i>Node.js</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+                    class="w-4 h-4 invert"
+                  />Next.js</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-vuejs text-[#4FC08D]"></i>Vue.js</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-react text-[#61DAFB]"></i>React</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://blueprint.zip/.assets/brand/logoTransparent.png"
+                    class="w-4 h-4 invert"
+                  />Blueprint</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                    class="w-4 h-4 invert"
+                  />Express</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                    class="w-4 h-4"
+                  />Tailwind CSS</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fab fa-bootstrap text-[#7952B3]"></i
+                  >Bootstrap</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://cdn.icon-icons.com/icons2/2148/PNG/512/ejs_icon_132422.png"
+                    class="w-4 h-4"
+                  />EJS</span
+                >
+              </div>
+            </div>
 
-                       <!-- Skills Grid -->
-                       <section class="mb-24">
-                           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                               <!-- Programming Languages -->
-                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
-                                   <div class="flex items-center gap-4 mb-4">
-                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                           <i class="fas fa-code text-accent text-2xl"></i>
-                                       </div>
-                                       <div>
-                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Languages</div>
-                                           <div class="text-zinc-400 text-lg">Programming & Markup</div>
-                                       </div>
-                                   </div>
-                                   <div class="flex flex-wrap gap-2">
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-js text-[#F7DF1E]"></i>JavaScript</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://avatars.githubusercontent.com/u/5430905?s=200&v=4" class="w-4 h-4">Rust</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" class="w-4 h-4">C#</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" class="w-4 h-4">C++</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-php text-[#777BB4]"></i>PHP</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-html5 text-[#E34F26]"></i>HTML</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-css3-alt text-[#1572B6]"></i>CSS</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" class="w-4 h-4">TypeScript</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-terminal text-zinc-300"></i>Bash</span>
-                                   </div>
-                               </div>
-           
-                               <!-- Frameworks -->
-                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
-                                   <div class="flex items-center gap-4 mb-4">
-                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                           <i class="fas fa-layer-group text-accent text-2xl"></i>
-                                       </div>
-                                       <div>
-                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Frameworks</div>
-                                           <div class="text-zinc-400 text-lg">& Runtimes</div>
-                                       </div>
-                                   </div>
-                                   <div class="flex flex-wrap gap-2">
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-node-js text-[#339933]"></i>Node.js</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" class="w-4 h-4 invert">Next.js</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-vuejs text-[#4FC08D]"></i>Vue.js</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-react text-[#61DAFB]"></i>React</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://blueprint.zip/.assets/brand/logoTransparent.png" class="w-4 h-4 invert">Blueprint</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" class="w-4 h-4 invert">Express</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-4 h-4">Tailwind CSS</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fab fa-bootstrap text-[#7952B3]"></i>Bootstrap</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://cdn.icon-icons.com/icons2/2148/PNG/512/ejs_icon_132422.png" class="w-4 h-4">EJS</span>
-                                   </div>
-                               </div>
-           
-                               <!-- Tools -->
-                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
-                                   <div class="flex items-center gap-4 mb-4">
-                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                           <i class="fas fa-tools text-accent text-2xl"></i>
-                                       </div>
-                                       <div>
-                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Tools</div>
-                                           <div class="text-zinc-400 text-lg">& Software</div>
-                                       </div>
-                                   </div>
-                                   <div class="flex flex-wrap gap-2">
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" class="w-4 h-4">VS Code</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" class="w-4 h-4">Docker</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" class="w-4 h-4">Nginx</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg" class="w-4 h-4">Apache2</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" class="w-4 h-4">MySQL</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" class="w-4 h-4">MongoDB</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" class="w-4 h-4">SQLite</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-edit text-blue-400"></i>Sublime Text</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-mouse-pointer text-purple-400"></i>Cursor</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-code text-blue-400"></i>Codeium</span>
-                                   </div>
-                               </div>
-                           </div>
-           
-                           <!-- Others -->
-                           <div class="mt-8">
-                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
-                                   <div class="flex items-center gap-4 mb-4">
-                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                           <i class="fas fa-plus text-accent text-2xl"></i>
-                                       </div>
-                                       <div>
-                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Others</div>
-                                           <div class="text-zinc-400 text-lg">Additional Skills</div>
-                                       </div>
-                                   </div>
-                                   <div class="flex flex-wrap gap-2">
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-file-code"></i>Markdown</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-camera"></i>Photoshop</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-file-excel"></i>Excel</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-file-powerpoint"></i>PPT</span>
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"><i class="fas fa-database"></i>Access</span>
-                                   </div>
-                               </div>
-                           </div>
-           
-                           <!-- Currently Learning -->
-                           <div class="mt-8">
-                               <div class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
-                                   <div class="flex items-center gap-4 mb-4">
-                                       <div class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                           <i class="fas fa-graduation-cap text-accent text-2xl"></i>
-                                       </div>
-                                       <div>
-                                           <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">Learning</div>
-                                           <div class="text-zinc-400 text-lg">Currently exploring</div>
-                                       </div>
-                                   </div>
-                                   <div class="flex flex-wrap gap-2">
-                                       <span class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2">
-                                           <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" class="w-4 h-4">Laravel
-                                       </span>
-                                   </div>
-                               </div>
-                           </div>
-                       </section>
-<!-- GitHub Contributions -->
-<section class="mb-24">
-    <div class="group p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
-        <div class="flex items-center gap-4 mb-6">
-            <div class="w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+            <!-- Tools -->
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-tools text-accent text-2xl"></i>
+                </div>
+                <div>
+                  <div
+                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text"
+                  >
+                    Tools
+                  </div>
+                  <div class="text-zinc-400 text-lg">& Software</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                    class="w-4 h-4"
+                  />VS Code</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+                    class="w-4 h-4"
+                  />Docker</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
+                    class="w-4 h-4"
+                  />Nginx</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg"
+                    class="w-4 h-4"
+                  />Apache2</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                    class="w-4 h-4"
+                  />MySQL</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                    class="w-4 h-4"
+                  />MongoDB</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><img
+                    src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
+                    class="w-4 h-4"
+                  />SQLite</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-edit text-blue-400"></i>Sublime Text</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-mouse-pointer text-purple-400"></i
+                  >Cursor</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-code text-blue-400"></i>Codeium</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Others -->
+          <div class="mt-8">
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-plus text-accent text-2xl"></i>
+                </div>
+                <div>
+                  <div
+                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text"
+                  >
+                    Others
+                  </div>
+                  <div class="text-zinc-400 text-lg">Additional Skills</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-file-code"></i>Markdown</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-camera"></i>Photoshop</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-file-excel"></i>Excel</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-file-powerpoint"></i>PPT</span
+                >
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                  ><i class="fas fa-database"></i>Access</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Currently Learning -->
+          <div class="mt-8">
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-graduation-cap text-accent text-2xl"></i>
+                </div>
+                <div>
+                  <div
+                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text"
+                  >
+                    Learning
+                  </div>
+                  <div class="text-zinc-400 text-lg">Currently exploring</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 hover:border-accent/50 transition-colors flex items-center gap-2"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+                    class="w-4 h-4"
+                  />Laravel
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- GitHub Contributions -->
+        <section class="mb-24">
+          <div
+            class="group p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
                 <i class="fab fa-github text-accent text-2xl"></i>
-            </div>
-            <div>
-                <div class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">GitHub Activity</div>
-                <div class="text-zinc-400 text-lg">Contributions in 2025</div>
-            </div>
-        </div>
-        <div class="overflow-hidden rounded-xl">
-            <img src="
-            https://ghchart.rshah.org/nullure"
-                 alt="GitHub Contributions Graph 2025"
-                 class="w-full">
-        </div>
-    </div>
-</section>
-
-<!-- Projects -->
-            <section>
-                <h2 class="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text mb-12">Latest Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Project Card -->
-                    <div class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
-                        <h3 class="text-2xl font-bold mb-2">NeuroPilot</h3>
-                        <p class="text-zinc-400 mb-4">Neuropilot is a Open-source education platform that transforms study materials into interactive resources like quizzes, flashcards, notes, and podcasts.</p>
-                        <div class="flex gap-4">
-                            <a href="https://github.com/CaviraOSS/neuropilot" class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
-                                <i class="fas fa-code"></i>
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card -->
-                    <div class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
-                        <h3 class="text-2xl font-bold mb-2">Caivra Labs</h3>
-                        <p class="text-zinc-400 mb-4">Addons that will make your Pterodactyl Fly.</p>
-                        <div class="flex gap-4">
-                            <a href="https://builtbybit.com/creators/spectrum_dev.551679" class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
-                                <i class="fas fa-code"></i>
-                                View Project
-                            </a>
-                        </div>
-                    </div>
+              </div>
+              <div>
+                <div
+                  class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text"
+                >
+                  GitHub Activity
                 </div>
-            </section>
-        </main>
+                <div class="text-zinc-400 text-lg">Contributions in 2025</div>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+              <img
+                src="
+            https://ghchart.rshah.org/nullure"
+                alt="GitHub Contributions Graph 2025"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+          <h2
+            class="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text mb-12"
+          >
+            Latest Projects
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- NeuroPilot Project Card -->
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-brain text-accent text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">NeuroPilot</h3>
+                  <div class="text-zinc-400">
+                    Open-source Education Platform
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-zinc-400 mb-6">
+                Transforms study materials into interactive resources like
+                quizzes, flashcards, notes, and podcasts using AI technology.
+              </p>
+
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/CaviraOSS/neuropilot"
+                  class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2"
+                >
+                  <i class="fab fa-github"></i>
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Cavira Labs Project Card -->
+            <div
+              class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-rocket text-accent text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Cavira Labs</h3>
+                  <div class="text-zinc-400">Pterodactyl Panel Addons</div>
+                </div>
+              </div>
+
+              <p class="text-zinc-400 mb-6">
+                Premium addons and extensions that enhance Pterodactyl Panel
+                functionality for gaming server management.
+              </p>
+
+              <div class="flex gap-4">
+                <a
+                  href="https://builtbybit.com/creators/spectrum_dev.551679"
+                  class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>
